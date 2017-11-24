@@ -10,8 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hrp.birthday.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="38dp"
+        android:id="@+id/birthdya"
+        android:text="Birthday Date"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthdya"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/save"
+        android:background="?attr/actionModeSplitBackground"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
